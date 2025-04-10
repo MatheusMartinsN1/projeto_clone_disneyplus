@@ -2,6 +2,9 @@
 @use 'hero';
 @use 'shows';
 @use 'plans';
+@use 'available-devices';
+@use 'faq';
+@use 'footer';
 
 @font-face {
     font-family: Avenir;
@@ -20,6 +23,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: Avenir, sans-serif;
+    list-style: none;
 }
 
 body {
@@ -79,4 +83,43 @@ body {
     border: none;
     margin-top: 2vw;
     margin-bottom: 8px;
+}
+
+.image-text-section {
+    padding: 5.6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    &__text_container {
+        padding: 0px 2vw;
+
+        h2 {
+            margin-bottom: 24px;
+        }
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    &--image-full-width {
+        display: block;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        &__text_container {
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            height: 100%;
+            width: calc(50% - 5.6vw);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
 }
