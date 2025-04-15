@@ -1,3 +1,5 @@
+@use 'variaveis.scss';
+
 .faq {
     padding: 5.6vw;
 
@@ -37,6 +39,19 @@
                 overflow: hidden;
                 padding: 0px 24px;
                 transition: height, 0.5s ease;
+
+                a {
+                    color: variaveis.$corTextoSecundario;
+                }
+
+                ul {
+                    padding-left: 40px;
+
+                    li {
+                        margin: 24px 0px;
+                        list-style: disc;
+                    }
+                }
             }
 
             &--is-open {
