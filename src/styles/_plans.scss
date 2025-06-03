@@ -28,10 +28,14 @@
                 background-image: url(../images/fundo_combo_plus.png);
                 background-repeat: no-repeat;
                 background-size: contain;
-            } 
+            }
 
             img {
                 height: 83px;
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
             }
 
             strong {
